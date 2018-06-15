@@ -1,0 +1,155 @@
+	body{
+		text-align: center;
+		background-color: #000000;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23282828' fill-opacity='0.53'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+		font-family: consolas;
+	 }
+
+	.listen{ position: relative; }
+
+	voice_out{
+	    display: block;
+	    font-size: 45px;
+	    margin-top: -135px;
+	    position: relative;
+	    top: 50px;
+	}
+
+
+	.gif{
+    margin-bottom: 25px;
+	margin-top: 80px;}
+
+	.youtube input,button{
+		border-radius: 8px;
+		font-size: 20px;}
+
+	button{
+		background-color: black;
+		border: solid #1f1f1f 1px;
+		color: #444444;
+		cursor:pointer;
+		padding: 5px 10px;
+-webkit-transition: background-color 0.5s ease-out;
+   -moz-transition: background-color 0.5s ease-out;
+	 -o-transition: background-color 0.5s ease-out;
+		transition: background-color 0.5s ease-out;
+	}
+
+	button:hover{background-color: #232323;}
+	button:focus {outline:0;}
+
+	/*Timer*/
+	.clockdiv{
+		color: #fff;
+		display: inline-block;
+		font-family: sans-serif;
+		font-size: 30px;
+		font-weight: 100;
+		margin-bottom: 90px;
+		margin-top: -35px;
+		text-align: center;
+	}
+
+	.clockdiv > div{
+		background: #232323;
+		border-radius: 3px;
+		display: inline-block;
+		margin:5px;
+		padding: 10px;
+	}
+
+	.clockdiv div > span{
+		background: #1f1f1f;
+		border-radius: 3px;
+		display: inline-block;
+		padding: 15px;
+	}
+
+	.clockdiv div > div{
+		font-size: 16px;
+		padding-top: 5px;
+	}
+
+	a{
+		color:#4697d9;
+		text-decoration: none;
+	}
+
+	a:hover{color:white;}
+
+
+	/*LOADER*/
+	.bars {
+		display: inline-block;
+		height: 100px;
+-webkit-transition: opacity 0.4s ease-out;
+   -moz-transition: opacity 0.4s ease-out;
+	 -o-transition: opacity 0.4s ease-out;
+		transition: opacity 0.4s ease-out;
+		width: 1px;
+	}
+
+	.bars div {
+		background: #4697d9;
+		display:inline-block;
+		height: 0;
+		margin-right:3px;
+-webkit-transition: background-color 1s ease-out;
+   -moz-transition: background-color 1s ease-out;
+	 -o-transition: background-color 1s ease-out;
+		transition: background-color 1s ease-out;
+		vertical-align: middle;
+		width: 20px;
+	}
+
+@keyframes sound {
+	0% {
+		height: 0;
+		opacity: .55;
+	}
+	100% {
+		height: 80px;
+		opacity: 1;
+	}
+}
+/*YOUTUBE*/
+
+
+	.youtube{
+     	display: inline-block;
+     	margin-bottom: 30px;
+     	margin-top: -30px;
+     	width: 600px;}
+    .close{display: none;}
+	.youtube iframe{
+		border: none;
+		margin-top: 4px;
+	 }
+	.youtube button{
+		position: relative;
+		top: -8px;
+	}
+
+	.youtube input{
+		background-color: black;
+		border: solid gray 1px;
+		color: white;
+		height: 30px;
+		padding-left: 10px;
+		position: relative;
+		top: -8px;
+	}
+	.close svg{width:0;}
+	.youtube svg{
+		margin-bottom: -10px;
+		margin-top: 10px;
+-webkit-transition: all 1s ease-in;
+   -moz-transition: all 1s ease-in;
+	 -o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+		 width:50px;
+}
+
+stylehere{display: none;}
+.invici{opacity:0;}

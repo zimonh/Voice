@@ -1,1 +1,0 @@
-<?php include 'speech-color-changer/index.php'; ?>
