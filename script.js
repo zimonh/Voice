@@ -1,5 +1,8 @@
+	/* FORCE HTTPS */
+	const loc = window.location.href+'';
+	if(loc.indexOf('http://')===0) window.location.href = loc.replace('http://','https://');
 
-	/* ZIMONH */
+	/* ZIMONH TINY QUERY SELECT*/
 	Object.prototype.qs = function(є){return this.querySelector(є);};
 	Object.prototype.qa = function(є){return this.querySelectorAll(є);};
 	const qs=є=>document.qs(є), qa=є=>document.qa(є), q=є=>qs(є.split(' ')[0]).qa(є.split(' ')[1]);
@@ -121,7 +124,7 @@
 			qs('.youtube').classList.remove('close');
 			qs('.youtube').classList.add('open');
 			if(voice_in === 'qq') voice_in = qs('#youtube_input').value;
-			qs('#youtube_iframe').src = 'https://www.youtube.com/embed?listType=search&list=' + voice_in; qs('#youtube_input').value = voice_in;},
+			qs('#youtube_iframe').src = 'https://www.youtube.com/embed?listType=search&list=' + voice_in + '?autoplay=1'; qs('#youtube_input').value = voice_in;},
 		close:()=>{
 			qs('.youtube').classList.remove('open');
 			qs('.youtube').classList.add('close');

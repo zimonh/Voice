@@ -37,7 +37,7 @@
 	}
 
 	button:hover{background-color: #232323;}
-	button:focus {outline:0;}
+	button:focus,input:focus{outline:0;}
 
 	/*Timer*/
 	.clockdiv{
