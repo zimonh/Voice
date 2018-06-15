@@ -177,7 +177,8 @@
 	no_speech=є=> console.log('no-speech'),
 	speech=є=> {
 		const voice_in = voice;
-		const word = voice_in.split(' ');
+		const word_in = voice_in.split(' ')[0];
+		const words_in = voice_in.split(' ')[0]+voice_in.split(' ')[1];
 
 		voice_out.innerHTML  = "<a href='"+"https://www.google.nl/search?q="+ voice_in+"'>" + voice_in +"</a>";
 
@@ -194,16 +195,16 @@
 		   voice_in === "torrent" 			||
 		   voice_in === "torrents" 			||
 		   voice_in === "open torrent")									opn("http://rarbgunblock.com"		,"RARBG");
-		if(word[0]+word[1] === "moviefacts")							opn("http://www.imdb.com/find?ref_=nv_sr_fn&q="+voice_in.replace(/movie facts /i,''),"IMDB");
-		if(word[0]+word[1] === "torrentsearch" )						opn("http://rarbgunblock.com/torrents.php?search="+torrentsearch(voice_in),"Torrent " +torrentsearch(voice_in));
-		if(word[0] === "play")											youtube.play(voice_in.replace(/play /i,''));
-		if(word[0] === "find" 				||
-		   word[0] === "search" 			||
-		   word[0] === "why")											opn("https://www.google.nl/search?q=" + voice_in.replace(/find /i,'').replace(/search /i,''), voice_in);
-		if(word[0]+word[1] === "starttimer"	||
-		   word[0]+word[1] === "settimer")								Timer.Set(voice_in);
-		if(word[0]+word[1] === "cleartimer"	||
-		   word[0]+word[1] === "stoptimer")								Timer.Clear();
+		if(words_in === "moviefacts")									opn("http://www.imdb.com/find?ref_=nv_sr_fn&q="+voice_in.replace(/movie facts /i,''),"IMDB");
+		if(words_in === "torrentsearch" )								opn("http://rarbgunblock.com/torrents.php?search="+torrentsearch(voice_in),"Torrent " +torrentsearch(voice_in));
+		if(word_in 	=== "play")											youtube.play(voice_in.replace(/play /i,''));
+		if(word_in 	=== "find" 				||
+		   word_in 	=== "search" 			||
+		   word_in 	=== "why")											opn("https://www.google.nl/search?q=" + voice_in.replace(/find /i,'').replace(/search /i,''), voice_in);
+		if(words_in === "starttimer"		||
+		   words_in === "settimer")										Timer.Set(voice_in);
+		if(words_in	=== "cleartimer"		||
+		   words_in === "stoptimer")									Timer.Clear();
 		if(voice_in.slice(-4).toLowerCase() === "gifs")					gify.gif(voice_in.toLowerCase().replace(/ gifs/i,''));
 		if(voice_in.slice(-3).toLowerCase() === "gif")					gify.gif(voice_in.toLowerCase().replace(/ gif/i,''));
 	};
