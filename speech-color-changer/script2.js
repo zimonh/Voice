@@ -1,5 +1,5 @@
-recognition.onresult = function(event) {
-	
+
+
 var last = event.results.length - 1;
 var voice_in = event.results[last][0].transcript;
 
@@ -61,4 +61,4 @@ voice_out.innerHTML = '<span style="color:red">Timer Stopped</span>';
 $("#clockdiv").hide(); if(typeof timeinterval !== 'undefined'){clearInterval(timeinterval);}else{}}
 bg.style.backgroundColor = voice_in;
 if(voice_in.slice(-4).toLowerCase() === "gifs"){gif(voice_in.toLowerCase().replace(/ gifs/g,''));}
-if(voice_in.slice(-3).toLowerCase() === "gif"){gif(voice_in.toLowerCase().replace(/ gif/g,''));}
+if(voice_in.slice(-3).toLowerCase() === "gif")gif(voice_in.toLowerCase().replace(/ gif/g,''));
