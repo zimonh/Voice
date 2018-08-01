@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<button class="listen" onclick="з.start()">Listen!</button><br>
+	<button id="start" class="listen">Listen!</button><br>
 	<div class="bars">
 	  <div></div><div></div><div></div><div></div><div></div><div></div>
 	  <span style="height:55px; display:inline-block;"></span>
@@ -25,15 +25,15 @@
 	<div class="youtube close">
 		<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 473.9 473.9"><circle cx="237" cy="237" r="237" fill="#D42428"/><path d="M404.5 69.4c92.5 92.5 92.5 242.6 0 335.1 -92.5 92.5-242.6 92.5-335.1 0L404.5 69.4z" fill="#CC202D"/><path d="M469.2 284.4L351.9 167.1l-138.3 15.7 -83.7 129.5 156.3 156.3C378.2 449.3 450.4 376.6 469.2 284.4z" fill="#BA202E"/><path d="M361 191.2c0-19.9-16.1-36-35.9-36H156.4c-19.8 0-35.9 16.1-35.9 36v96.4c0 19.9 16.1 36 35.9 36h168.6c19.9 0 35.9-16.1 35.9-36v-96.4H361zM216.6 280.1v-90.6l68.7 45.3L216.6 280.1z" fill="#FFF"/></svg>
 		<input type="text"  id="youtube_input" />
-		<button id="youtube_play" onclick="youtube.play('qq')">Search Playlists</button>
-		<button id="youtube_close" onclick="youtube.close()">X</button>
-		<iframe id="youtube_iframe" width="600px" height="360px" allow="autoplay; fullscreen"></iframe></br></br>
+		<button id="youtube_play">Search Playlists</button>
+		<button id="youtube_close">X</button>
+		<iframe id="youtube_iframe" width="450px" height="360px" allow="autoplay; fullscreen"></iframe></br></br>
 	</div>
 	<br>
 	<div class="clockdiv close">
 		<div style="display:none"><span class="days"></span><div>Days</div></div>
 		<div><span class="hours"></span><div>Hours</div></div><div><span class="minutes"></span><div>Minutes</div></div><div><span class="seconds"></span><div>Seconds</div></div><br><button class="stop_alarm close">Stop alarm</button>
 	</div>
-	<script src="script.js"></script>
+	<script src="script.js?123"></script>
 </body>
 </html>
